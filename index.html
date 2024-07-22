@@ -26,12 +26,12 @@
 
         </div>
         <div class="right-column">
-            <h4 class="quote">This is not a real service!
+            <p class="quote">This is not a real service!
                 You know you need something like this in
                 your life to help you realize your deepest
                 dreams <br>Sign up right now to get started.
                 <br><br>You know you want to.
-            </h4>
+                </>
 
 
             <form action="" method="get" id="main-form">
@@ -45,21 +45,24 @@
                                 NAME*</label>
                             <input type="text"
                                 name="user_name" id="name"
-                                required>
+                                required minlength="2"
+                                maxlength="20">
                         </div>
                         <div>
                             <label
                                 for="email">EMAIL*</label>
                             <input type="email"
                                 name="user_email" id="email"
-                                required>
+                                required
+                                placeholder="user@example.com">
                         </div>
                         <div>
                             <label
                                 for="password">PASSWORD</label>
                             <input type="password"
                                 name="user_password"
-                                id="password" pattern="">
+                                id="password"
+                                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d]{8,25}$">
                         </div>
                     </div>
                     <div class="right">
@@ -69,7 +72,8 @@
                                 NAME</label>
                             <input type="text"
                                 name="user_lastname"
-                                id="lastname">
+                                id="lastname" minlength="2"
+                                maxlength="20">
                         </div>
 
 
@@ -88,7 +92,7 @@
                                 PASSWORD</label>
                             <input type="password"
                                 name="user_pconfirmation"
-                                id="pconfirmation">
+                                id="pconfirmation" disabled>
                         </div>
                     </div>
                 </div>

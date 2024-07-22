@@ -104,7 +104,7 @@
   }
 
   .subtext{
-    font-weight: bold;
+    font-weight: normal;
     color: rgba(0, 0, 0, 0.726);
 
     a{
